@@ -16,7 +16,8 @@ class OrgEventController extends Controller
      */
     public function index()
     {
-        return OrgEventResource::collection(OrgEvent::select('event_name')->get());
+        return OrgEvent::all();
+        //return OrgEventResource::collection(OrgEvent::select('event_name')->get());
     }
 
     /**
