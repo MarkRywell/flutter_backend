@@ -28,7 +28,11 @@ class OrgEventController extends Controller
      */
     public function store(Request $request)
     {
-        //
+    
+        return OrgEvent::create([
+            'id' => $request["id"],
+            'event_name' => $request["event_name"]
+        ]);
     }
 
     /**
