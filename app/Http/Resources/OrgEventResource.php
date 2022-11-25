@@ -15,7 +15,7 @@ class OrgEventResource extends JsonResource
     public function toArray($request)
     {
         return [
-            'Event Name' => $this->event_name
+            'event_name' => $this->event_name
         ];
     }
 }

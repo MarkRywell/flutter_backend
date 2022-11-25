@@ -6,6 +6,7 @@ use App\Http\Controllers\Controller;
 use App\Http\Resources\OrgEventResource;
 use App\Models\OrgEvent;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\DB;
 
 class OrgEventController extends Controller
 {
@@ -16,8 +17,7 @@ class OrgEventController extends Controller
      */
     public function index()
     {
-        return OrgEvent::all();
-        //return OrgEventResource::collection(OrgEvent::select('event_name')->get());
+        return OrgEventResource::collection(DB::table('org_events')->select('event_name')->get());
     }
 
     /**
