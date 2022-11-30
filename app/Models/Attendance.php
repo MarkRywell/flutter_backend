@@ -24,5 +24,4 @@ class Attendance extends Model
     ];
 
     protected $primaryKey = 'id';
-    
 }

@@ -25,6 +25,7 @@ class DatabaseSeeder extends Seeder
             OrgEventSeeder::class,
             PositionSeeder::class,
             StudentSeeder::class,
+            AttendanceSeeder::class,
         ]);
     }
 }
