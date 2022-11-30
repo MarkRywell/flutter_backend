@@ -17,4 +17,12 @@ class Attendance extends Model
         return $this->belongsTo(Student::class);
     }
 
+    protected $fillable = [
+        'id',
+        'event_id',
+        'student_id',
+    ];
+
+    protected $primaryKey = 'id';
+    
 }

@@ -22,7 +22,9 @@ class DatabaseSeeder extends Seeder
         // ]);
 
         $this->call([
-            OrgEventSeeder::class
+            OrgEventSeeder::class,
+            PositionSeeder::class,
+            StudentSeeder::class,
         ]);
     }
 }

@@ -29,6 +29,10 @@ class OrgEventSeeder extends Seeder
                 'event_name' => 'School Event'
             ],
             [
+                'id' => 400,
+                'event_name' => 'Workshop Session'
+            ],
+            [
                 'id' => 500,
                 'event_name' => 'MagkahiOSA Meeting'
             ],

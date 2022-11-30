@@ -18,6 +18,6 @@ Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
     return $request->user();
 });
 
-Route::get('events', [\App\Http\Controllers\Api\OrgEventController::class, 'index']);
+Route::get('/events', [\App\Http\Controllers\Api\OrgEventController::class, 'index']);
 
-Route::post('add_event', [\App\Http\Controllers\Api\OrgEventController::class, 'store']);
+Route::post('/add_event', [\App\Http\Controllers\Api\OrgEventController::class, 'store']);
